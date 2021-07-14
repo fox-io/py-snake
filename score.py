@@ -25,7 +25,8 @@ class Score(Turtle):
 
     def update_text(self):
         self.clear()
-        self.write(f"Score: {self.score} High Score: {self.high_score}", False, align="center", font=("Arial", 14, "normal"))
+        self.write(f"Score: {self.score} High Score: {self.high_score}",
+                   False, align="center", font=("Arial", 14, "normal"))
 
     def game_over(self):
         if self.score > self.high_score:
