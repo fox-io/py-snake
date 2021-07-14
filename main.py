@@ -7,6 +7,9 @@ Snake Game
 """
 from turtle import Screen
 from time import sleep
+from snake import Snake
+from score import Score
+from food import Food
 
 
 def main():
@@ -21,6 +24,11 @@ def main():
 
     # Listen for keybinds
     screen.listen()
+
+    # Add game elements
+    snake = Snake()
+    score = Score()
+    food = Food()
 
     # Main game loop
     running = True
