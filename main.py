@@ -1,5 +1,5 @@
 """
-py-snake
+py-snake/main.py
 
 Snake Game
 

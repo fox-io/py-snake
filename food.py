@@ -1,3 +1,10 @@
+"""
+py-snake/food.py
+
+Snake Game
+
+(c)2021 John Mann <gitlab.fox-io@foxdata.io>
+"""
 from turtle import Turtle
 from random import randint
 
