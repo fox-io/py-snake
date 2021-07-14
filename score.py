@@ -16,7 +16,12 @@ class Score(Turtle):
         self.color("white")
         self.goto(0, 280)
         self.score = 0
-        self.high_score = 0
+        with open("HI_SCORE.TXT") as file:
+            contents = file.read()
+            if contents and int(contents) >= 0:
+                self.hi_score = int(contents)
+            else:
+                self.hi_score = 0
         self.update_text()
 
     def add_point(self):
@@ -25,12 +30,14 @@ class Score(Turtle):
 
     def update_text(self):
         self.clear()
-        self.write(f"Score: {self.score} High Score: {self.high_score}",
+        self.write(f"Score: {self.score} Hi-Score: {self.hi_score}",
                    False, align="center", font=("Arial", 14, "normal"))
 
     def game_over(self):
-        if self.score > self.high_score:
-            self.high_score = self.score
+        if self.score > self.hi_score:
+            self.hi_score = self.score
+            with open("HI_SCORE.TXT", mode="w") as file:
+                file.write(str(self.hi_score))
 
         # Reset our score
         self.score = 0
