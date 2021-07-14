@@ -65,3 +65,9 @@ class Snake:
     def head_east(self):
         if self.body[0].heading() == 270.0 or self.body[0].heading() == 90.0:
             self.body[0].setheading(0.0)
+
+    def respawn(self):
+        for segment in self.body:
+            segment.goto(800, 800)
+        self.body.clear()
+        self.__init__()

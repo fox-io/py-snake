@@ -51,11 +51,11 @@ def main():
         elif nom_nom == 2:
             # Body collision
             score.game_over()
-            break
+            snake.respawn()
         elif nom_nom == 3:
             # Wall collision
             score.game_over()
-            break
+            snake.respawn()
 
     screen.exitonclick()
 
