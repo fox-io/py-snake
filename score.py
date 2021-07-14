@@ -3,7 +3,7 @@ py-snake/score.py
 
 Snake Game
 
-(c)2021 John Mann <gitlab.fox-io@foxdata.io>
+(c)2021 John Mann <github.fox-io@foxdata.io>
 """
 from turtle import Turtle
 

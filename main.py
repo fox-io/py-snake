@@ -3,7 +3,7 @@ py-snake/main.py
 
 Snake Game
 
-(c)2021 John Mann <gitlab.fox-io@foxdata.io>
+(c)2021 John Mann <github.fox-io@foxdata.io>
 """
 from turtle import Screen
 from time import sleep
